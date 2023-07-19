@@ -1,0 +1,38 @@
+
+ <div>
+    <h1 id = "h2">Cart</h1>
+    
+    <!-- <ul> -->
+
+        <!-- <li *ngFor="let pizza of foods" > -->
+            <div *ngFor="let pizza of foods">
+                <img src = "{{pizza.imageURL}}" alt = "food images">
+               
+                <h1 id = "h1">PizzaId:{{pizza.pizzaId}}</h1>
+                <button (click)="Quantity1(pizza.pizzaId,pizza)">pizza</button>    
+                <p>{{pizza. Quantity}}</p>          
+                 <!-- {{pizza.name}} -->
+                 price: {{pizza.totalAmount}}
+                 <!-- Price:{{price1}}; -->
+                  <!-- <h4>${{price1}}</h4> -->
+              <h4 id = "h1">star:{{pizza.star}}</h4>
+              cookTime:<h4>{{pizza.cookTime}}</h4>
+              Tags:<h4>{{pizza.tags}}</h4>
+               Origin:<h4>{{pizza.origins}}</h4>
+               <button (click)="delete(pizza)">
+            
+                <mat-icon>
+                    remove_shopping_cart
+                    </mat-icon>
+               </button>
+               
+            </div>
+        <!-- </li> -->
+              
+         <h2>Total Amount: ${{totalAmount}}</h2>
+         <button (click)="order()">Confirm Order</button>
+         
+    <!-- </ul> -->
+    
+      <app-order *ngIf="isOrderPlaced"></app-order>
+</div>

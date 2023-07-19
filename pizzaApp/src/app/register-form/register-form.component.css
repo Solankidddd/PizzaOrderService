@@ -1,0 +1,84 @@
+h2{
+    
+    padding: 15px;
+    color: blue;
+    
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    margin-left: 12em;
+    width: 40%;
+    
+    font-size: medium;
+   background-color:skyblue;
+
+    
+    }
+  
+  
+  
+  button {
+    margin-right: 10px;
+    padding: 0 40px; 
+    margin:15px;
+    font-size: large;
+  }
+  
+  
+  
+  mat-form-field {
+    display: block;
+    
+  }
+
+  h4{
+    color:darkslategrey;
+  }
+  .full-width {
+    width: 100%;
+  }
+  
+  .shipping-card {
+    min-width: 120px;
+    margin: 20px auto;
+  }
+  
+  
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .col {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .col:last-child {
+    margin-right: 0;
+  }
+  label{
+    margin: 5px;
+  }
+  .container{
+    
+    background-size: cover;
+    width: 140%;
+    height: 160%;
+    background-color: rgba(127, 255, 212, 0.526);
+    background-color: rgba(127, 255, 212, 0.526);
+  }
+  #c1
+  {
+    width: 520px;
+  }
+  #p1
+  {
+    width: 520px;
+  }
+  
+  

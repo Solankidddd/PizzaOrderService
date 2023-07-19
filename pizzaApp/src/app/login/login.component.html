@@ -1,0 +1,65 @@
+<div class = "container">
+    <form class="form" [formGroup]="userform" (ngSubmit)="onSubmit()">
+    
+            <mat-form-field appearance="fill">
+                <input matInput type="text" placeholder="email" id="email" formControlName="email">
+                <mat-error *ngIf="email?.errors?.['required']">
+                    Email is required.
+                </mat-error>
+                
+        
+            <!-- </mat-form-field>
+            <mat-form-field appearance="fill">
+                <input matInput type="text" placeholder="firstName" id="firstName" formControlName="firstName">
+                <mat-error *ngIf="firstName?.errors?.['required']">
+                    firstName is required.
+                </mat-error> -->
+                
+        
+            </mat-form-field>
+
+            
+            <!-- <mat-form-field appearance="fill">
+                <input matInput type="text" placeholder="lastName" id="lastName" formControlName="lastName">
+                <mat-error *ngIf="lastName?.errors?.['required']">
+                    lastName is required.
+                </mat-error>
+                
+        
+            </mat-form-field> -->
+
+         
+            <!-- <mat-form-field appearance="fill">
+                <input matInput type="text" placeholder="phoneNo" id="phoneNo." formControlName="phoneNo">
+                <mat-error *ngIf="phoneNo?.errors?.['required']">
+                    phoneNo. is required.
+                </mat-error>
+                
+        
+            </mat-form-field> -->
+            <!-- <mat-form-field appearance="fill">
+                <input matInput type="text" placeholder="userId" id="phoneNo." formControlName="userId">
+                <mat-error *ngIf="userId?.errors?.['required']">
+                    userId is required.
+                </mat-error>
+                
+        
+            </mat-form-field> -->
+            <div class="row">
+                <div class="col">
+                    <mat-form-field appearance="fill">
+                        <input matInput type="password" placeholder="Password" id="password" formControlName="password">
+                        <mat-error *ngIf="password?.errors?.['required']">
+                            Password is required.
+                        </mat-error>
+                    </mat-form-field>
+            </div>
+            </div>
+            
+                
+                    
+             <button color="primary" mat-button mat-raised-button [disabled]="!userform.valid" 
+             type="submit">Login</button>
+         
+         </form>      
+    </div>        

@@ -1,0 +1,43 @@
+<app-header></app-header>
+<div class = "Button">
+    <button class = "btn btn-danger" id = "log" (click)="Logout()">Logout</button>
+ </div>
+<ul>
+  
+    <li *ngFor ="let food of foods">
+        
+        <img src = "{{food.imageURL}}" alt = "food images">
+        <div class = "Content">
+            <div class = "name">
+                {{food.name}}
+            </div>
+            <span class = "favourite {{food.favourite?'':'not'}}">
+                 
+            </span>
+            <div class = "rat">
+                <ngb-rating [max] = "5" [(rate)] = "food.star" [readonly]="false"></ngb-rating>
+                <p>Rating: {{food.star}} </p>
+            </div>   
+             <div class = "price">
+                 price: ${{food.pizzaPrice}}
+             </div>
+             <div class = "cook">
+                CookTime:{{food.cookTime}}
+             </div>
+             <div class = "Origin">
+                Origin: {{food.origins}}
+             </div>
+             <div class = "Tags">
+                  Tags: {{food.tags}}
+             </div>
+             <div class = "Button">
+                <button class = "btn btn-primary" (click)="addToCart(food)">Add To Cart</button>
+             </div>
+        </div>
+        
+    </li>
+  </ul>
+ 
+
+  <button class = "btn btn-danger" id = "red" (click)="goToCart()">View Cart</button>
+

@@ -1,0 +1,54 @@
+header
+{
+    background-color: white;
+    padding:0px;
+    border-bottom:1px solid red;
+    height:35px;
+    width:1550px;
+    margin-left:-125px;
+}
+a
+{
+    color: orangered;
+     font-size: large;
+     padding-top: 15px;
+}
+a:hover
+{
+    background-color: red;
+    color:white;
+}
+.container
+{
+    margin: 0 auto;
+    display:flex;
+    
+}
+.logo1
+{
+    padding-left: 1250px;
+    padding-top:15px;
+    font-weight:900;
+}
+nav ul
+{
+    list-style-type: none;
+    margin :0;
+}
+.Logo
+{
+    margin-left:-70px;
+    font-weight:900;
+}
+nav
+{
+    margin-top: 1px;
+}
+ul
+{
+    margin-top:1;
+}
+h2
+{
+    color:red;
+}

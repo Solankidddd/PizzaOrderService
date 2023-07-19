@@ -1,0 +1,81 @@
+ul
+{
+    display:flex;
+    justify-content: centre;
+    align-items: centre;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+
+ul li  img
+{
+    /* height: 10 px;
+    width : 10 px;
+    border: 1px solid whitesmoke;
+    border-radius: 1 rem;
+    margin : 0.5 rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color : red; */
+    /* border:1px solid whitesmoke;
+    border-color: brown; */
+    margin:100px;
+    margin-top:40px;
+    height: 200px;
+    width: 222px;
+
+}
+li :hover
+{
+    opacity:0.9;
+    cursor: pointer;
+}   
+.name
+{
+    text-align: center;
+    padding-top:-1000px;
+}
+.Content
+{
+      margin-top:-100px;
+}
+.rat
+{
+   margin-left:180px;
+}
+.price
+{
+    margin-left:180px;
+    margin-top:-13px;
+}
+.cook
+{
+    margin-left:180px;
+    
+}
+.Origin
+{
+    margin-left:180px;
+}
+.Tags
+{
+    margin-left:180px;
+}
+.Button
+{
+    margin-left:180px;
+}
+#red
+{
+    margin-left:600px;
+}
+#log
+{
+    justify-content:end;
+    margin-left: 1080px;
+    margin-top:15px;
+}
